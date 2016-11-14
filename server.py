@@ -14,6 +14,6 @@ while True:
     localtime = time.localtime(time.time())
     dt = datetime.datetime(*localtime[:6])
     print "Local current time :", localtime
-    c.send(dt.strftime('Tanggal : %d / %m / %Y'))
+    c.send(dt.strftime('Tanggal : %d - %m - %Y'))
     
     c.close()
